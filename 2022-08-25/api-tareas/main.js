@@ -7,7 +7,7 @@ const app = express();
 app.use(express.json());
 
 // Routers
-app.route("/tareas", tareasRouter);
+app.use("/tareas", tareasRouter);
 
 // Mensaje de bienvenida
 app.get("/", (req, res) => {

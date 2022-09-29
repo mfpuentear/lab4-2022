@@ -1,5 +1,6 @@
 import express from "express";
 import { db } from "./db.js";
+import { authRouter } from "./routers/auth.router.js";
 import { cuentasRouter } from "./routers/cuentas.router.js";
 import { personasRouter } from "./routers/personas.router.js";
 import { tareasRouter } from "./routers/tareas.router.js";
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use("/tareas", tareasRouter);
 app.use("/personas", personasRouter);
 app.use("/cuentas", cuentasRouter);
+app.use("/auth", authRouter);
 
 // Mensaje de bienvenida
 app.get("/", (req, res) => {

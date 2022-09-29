@@ -1,6 +1,5 @@
 import express from "express";
-import { Persona } from "../models/persona.model.js";
-import { Tarea } from "../models/tarea.model.js";
+import { Persona, Tarea } from "../models/index.js";
 
 export const tareasRouter = express.Router();
 

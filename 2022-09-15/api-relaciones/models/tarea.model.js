@@ -25,6 +25,3 @@ export const Tarea = db.define(
   },
   { tableName: "tareas", timestamps: false }
 );
-
-Persona.hasMany(Tarea);
-Tarea.belongsTo(Persona);

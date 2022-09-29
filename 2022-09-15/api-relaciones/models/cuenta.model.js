@@ -29,6 +29,3 @@ export const Cuenta = db.define(
     timestamps: false,
   }
 );
-
-Persona.hasOne(Cuenta);
-Cuenta.belongsTo(Persona);

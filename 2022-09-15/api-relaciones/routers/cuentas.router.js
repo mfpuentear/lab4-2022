@@ -1,6 +1,5 @@
 import express from "express";
-import { Cuenta } from "../models/cuenta.model.js";
-import { Persona } from "../models/persona.model.js";
+import { Persona, Cuenta } from "../models/index.js";
 
 export const cuentasRouter = express.Router();
 
